@@ -1,6 +1,6 @@
 function countNumber(arr,num){
 
-    let newArray = [].concat(...arr);
+    let newArray = new Array().concat(...arr);
 
     let filteredArray = newArray.filter(value => value === num);
 
