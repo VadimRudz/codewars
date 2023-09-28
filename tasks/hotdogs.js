@@ -9,15 +9,3 @@ function saleHotdogs(n){
         return undefined;
     }
 }
-
-console.log(saleHotdogs(1));
-console.log(saleHotdogs(4));
-console.log(saleHotdogs(5));
-console.log(saleHotdogs(9));
-console.log(saleHotdogs(10));
-console.log(saleHotdogs(100));
-  
-// number of hotdogs	price per unit (cents)
-// n < 5	100
-// n >= 5 and n < 10	95
-// n >= 10	90
