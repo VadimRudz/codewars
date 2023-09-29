@@ -3,14 +3,14 @@ var searchRange = function(nums, target) {
     let indexArray = [];
 
     if(nums.includes(target) === false || nums.length === 0) {
-        return [-1, -1]
+        return [-1, -1];
     } else {
         for(let i = 0; i < nums.length; i++){
             if(target === nums[i]){
                 indexArray.push(i);
             }
         }
-        return [indexArray[0], indexArray[indexArray.length-1]]
+        return [indexArray[0], indexArray[indexArray.length-1]];
     }
  
 };

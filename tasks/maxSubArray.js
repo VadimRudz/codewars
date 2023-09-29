@@ -1,25 +1,25 @@
 var maxSubArray = function (nums) {
-  if (nums.length === 1) {
-    return nums[0];
-  }
-
-  let numCopy = JSON.parse(JSON.stringify(nums));
-
-  let sumArray = [];
-
-  while (numCopy.length > 0) {
-    let currentValue = numCopy[0];
-    sumArray.push(currentValue);
-    let innerNumCopy = JSON.parse(JSON.stringify(numCopy));
-    innerNumCopy.shift();
-    for (let i = 0; i < innerNumCopy.length; i++) {
-      currentValue = currentValue + innerNumCopy[i];
-      sumArray.push(currentValue);
+    if (nums.length === 1) {
+        return nums[0];
     }
-    numCopy.shift();
-  }
 
-  return sumArray.sort((a, b) => a - b).reverse()[0];
+    let numCopy = JSON.parse(JSON.stringify(nums));
+
+    let sumArray = [];
+
+    while (numCopy.length > 0) {
+        let currentValue = numCopy[0];
+        sumArray.push(currentValue);
+        let innerNumCopy = JSON.parse(JSON.stringify(numCopy));
+        innerNumCopy.shift();
+        for (let i = 0; i < innerNumCopy.length; i++) {
+            currentValue = currentValue + innerNumCopy[i];
+            sumArray.push(currentValue);
+        }
+        numCopy.shift();
+    }
+
+    return sumArray.sort((a, b) => a - b).reverse()[0];
 };
 
 console.log(maxSubArray([-2, 1, -3, 4, -1, 2, 1, -5, 4]));

@@ -6,7 +6,7 @@ const twoSum = function(nums, target) {
         if(nums.includes(target-nums[i]) && i !== nums.lastIndexOf(target-nums[i])){
             resultArray.push(i);
             resultArray.push(nums.lastIndexOf(target-nums[i]));
-            return resultArray
+            return resultArray;
         }
     }
     

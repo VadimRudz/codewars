@@ -4,13 +4,13 @@ function cutTheRopes(a) {
     let sortArray = a.filter((number) => number > 0);
   
     while (sortArray.length > 0) {
-      resultArray.push(sortArray.length);
+        resultArray.push(sortArray.length);
   
-      let firstNumber = (sortArray.sort((a, b) => a - b))[0];
+        let firstNumber = (sortArray.sort((a, b) => a - b))[0];
   
-      sortArray = sortArray.map(num => num - firstNumber);
+        sortArray = sortArray.map(num => num - firstNumber);
   
-      sortArray = sortArray.filter((number) => number > 0);
+        sortArray = sortArray.filter((number) => number > 0);
     }
   
     const uniqueNumbersSet = new Set(resultArray);

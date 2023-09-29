@@ -10,7 +10,7 @@ function towerBuilder(nFloors) {
 
     }
 
-    return resultArray
+    return resultArray;
 }
 
 console.log(JSON.stringify(towerBuilder(3)));

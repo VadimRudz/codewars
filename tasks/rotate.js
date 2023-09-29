@@ -12,4 +12,4 @@ function rotate(str) {
     
 }
 
-    rotate("Hello");
+rotate("Hello");

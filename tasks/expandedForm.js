@@ -10,7 +10,7 @@ function expandedForm(num) {
         currentValue = `${currentValue}${(0).toString().repeat(numLength-1)}`;
         numLength--;
         return  currentValue;
-    })
+    });
 
     resultArray = resultArray.filter(n => n);
 
@@ -19,14 +19,14 @@ function expandedForm(num) {
         if(i === 0){
             accamulate = resultArray[0] + "";
         } else {
-            accamulate = accamulate + ` + ${resultArray[i]}`
+            accamulate = accamulate + ` + ${resultArray[i]}`;
         }
     }
 
-    return accamulate
-  }
+    return accamulate;
+}
 
-  expandedForm(70304);
+expandedForm(70304);
 // expandedForm(12); // Should return '10 + 2'
 // expandedForm(42); // Should return '40 + 2'
 // expandedForm(70304); // Should return '70000 + 300 + 4'

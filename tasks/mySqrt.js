@@ -1,31 +1,31 @@
 var mySqrt = function (x) {
-  if (x === 1 && x === 3) {
-    return 1;
-  } else {
-    const half = x / 2;
+    if (x === 1 && x === 3) {
+        return 1;
+    } else {
+        const half = x / 2;
 
-    let someArray = [];
+        let someArray = [];
 
-    let resultArray = [];
+        let resultArray = [];
 
-    for (let i = 2; i <= half; i++) {
-        resultArray.push(i);
-      someArray.push(i * i);
+        for (let i = 2; i <= half; i++) {
+            resultArray.push(i);
+            someArray.push(i * i);
+        }
+
+        let neededIndex = 0;
+
+        let smallestValue = 0;
+
+        someArray = someArray.map((value) => value - x);
+
+        for (let j = 0; j < someArray.length; j++) {
+            if (someArray[j] >= 0 && someArray[j] <= smallestValue) {
+                neededIndex = j;
+            }
+        }
+        return resultArray[neededIndex];
     }
-
-    let neededIndex = 0;
-
-    let smallestValue = 0;
-
-    someArray = someArray.map((value) => value - x);
-
-    for (let j = 0; j < someArray.length; j++) {
-      if (someArray[j] >= 0 && someArray[j] <= smallestValue) {
-        neededIndex = j;
-      }
-    }
-    return resultArray[neededIndex];
-  }
 };
 
 console.log(4);

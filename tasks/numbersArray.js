@@ -9,7 +9,7 @@ for(let value of stringArray){
         sum = sum + Number(innerValue);
     }
     sumArray.push(sum);
- }
+}
 
 let index;
 let maxValue = 0;

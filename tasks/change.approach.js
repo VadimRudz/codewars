@@ -23,36 +23,36 @@ const object = {
     "reason": "<string>",
     "note": "<string>",
     "reference": "<string>"
-  }
+};
   
-  const clientAccountsBody = [
+const clientAccountsBody = [
     {
-      id: 'fe411951464d45f396989577f9575a2f',
-      totalBalance: 100,
-      availableBalance: 100,
-      iban: 'GB24BKEN10000031510604',
-      bic: 'FDFIGB22XXX',
-      accountName: 'Stock purchase account',
-      colour: 'red',
-      icon: 'car',
-      favourite: false,
-      currencyCode: 'EUR',
-      status: 'active',
+        id: 'fe411951464d45f396989577f9575a2f',
+        totalBalance: 100,
+        availableBalance: 100,
+        iban: 'GB24BKEN10000031510604',
+        bic: 'FDFIGB22XXX',
+        accountName: 'Stock purchase account',
+        colour: 'red',
+        icon: 'car',
+        favourite: false,
+        currencyCode: 'EUR',
+        status: 'active',
     },
     {
-      id: '4eb249695b584e6dbcb0355799011e15',
-      totalBalance: 300,
-      availableBalance: 300,
-      accountNumber: '31510604',
-      sortCode: '100000',
-      accountName: 'Staff salary account',
-      colour: 'green',
-      icon: 'car',
-      favourite: false,
-      currencyCode: 'GBP',
-      status: 'pending',
+        id: '4eb249695b584e6dbcb0355799011e15',
+        totalBalance: 300,
+        availableBalance: 300,
+        accountNumber: '31510604',
+        sortCode: '100000',
+        accountName: 'Staff salary account',
+        colour: 'green',
+        icon: 'car',
+        favourite: false,
+        currencyCode: 'GBP',
+        status: 'pending',
     },
-  ];
+];
 
 //   function recLookup(obj, path) {
 //     let parts = path.split(".");

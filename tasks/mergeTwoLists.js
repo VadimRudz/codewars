@@ -1,18 +1,18 @@
 var mergeTwoLists = function (list1, list2) {
-  const resultArray = [];
+    const resultArray = [];
 
-  if (list1.length === 0) {
-    return list2;
-  } else if (list2.length === 0) {
-    return list1;
-  } else {
-    for (let i = 0; i < list1.length; i++) {
-      resultArray.push(list1[i]);
-      resultArray.push(list2[i]);
+    if (list1.length === 0) {
+        return list2;
+    } else if (list2.length === 0) {
+        return list1;
+    } else {
+        for (let i = 0; i < list1.length; i++) {
+            resultArray.push(list1[i]);
+            resultArray.push(list2[i]);
+        }
     }
-  }
 
-  return resultArray;
+    return resultArray;
 };
 
 console.log(mergeTwoLists([], [0]));

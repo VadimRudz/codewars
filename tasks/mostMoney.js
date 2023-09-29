@@ -27,7 +27,7 @@ function mostMoney(students) {
     const filteredArray = moneyArry.filter(value => value === maxAmount);
 
     if(filteredArray.length === moneyArry.length){
-        return 'all'
+        return 'all';
     } else {
         return students[index].name;
     }
@@ -36,10 +36,10 @@ function mostMoney(students) {
 
 class Student {
     constructor(name, fives, tens, twenties) {
-      this.name = name;
-      this.fives = fives;
-      this.tens = tens;
-      this.twenties = twenties;
+        this.name = name;
+        this.fives = fives;
+        this.tens = tens;
+        this.twenties = twenties;
     }
 }
 

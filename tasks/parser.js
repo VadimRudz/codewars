@@ -1,20 +1,20 @@
 function parse( data ) {
-  let number = 0
+    let number = 0;
 
-  let array = [];
+    let array = [];
 
-  for (let char of data) {
+    for (let char of data) {
 
-    if(char === 'i'){
-        number++;
-    } else if(char === 'd'){
-        number--;
-    } else if(char === 's') {
-        number = Math.pow(number, 2);
-    } else if(char === 'o'){
-        array.push(number);
+        if(char === 'i'){
+            number++;
+        } else if(char === 'd'){
+            number--;
+        } else if(char === 's') {
+            number = Math.pow(number, 2);
+        } else if(char === 'o'){
+            array.push(number);
+        }
     }
-  }
     return array;
 }
 

@@ -5,7 +5,7 @@ var kWeakestRows = function (mat, k) {
     mat.forEach((value) => {
         let filteredArray = value.filter((innerValue => innerValue > 0));
         soldiersNumberArray.push(filteredArray.length);
-    })
+    });
 
     const soldiersObject = new Object();
 

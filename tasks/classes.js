@@ -1,12 +1,12 @@
 class Animal {
     constructor(x) {
-      this.surname = x;
-      this.name = `${this.surname}!!!!`;
+        this.surname = x;
+        this.name = `${this.surname}!!!!`;
     }
 }
 
 class Panda extends Animal {
- static x = "xexe";
+    static x = "xexe";
 }
 
 class Tiger extends Animal {

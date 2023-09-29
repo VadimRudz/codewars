@@ -1,10 +1,10 @@
 var isMatch = function(s, p) {
 
     if(p.includes('*') && s){
-        return true
+        return true;
     } else {
         for (let i = 0; i < s.length; i++){
-            console.log('i am here')
+            console.log('i am here');
             if(s[i] !== p[i] || p[i] === '?' || (!(p[i]))){
                 return false;
             }

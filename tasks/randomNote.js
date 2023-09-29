@@ -4,16 +4,16 @@ const canConstruct = function(ransomNote, magazine) {
 
     for (let char of ransomNote) {
 
-    let elementIndex = magazine.indexOf(char);
+        let elementIndex = magazine.indexOf(char);
 
-    if(elementIndex < 0) {
-        isConditionalTrue = false; 
-    } else {
-        magazine = magazine.substring(0, elementIndex) + magazine.substring(elementIndex + 1);
+        if(elementIndex < 0) {
+            isConditionalTrue = false; 
+        } else {
+            magazine = magazine.substring(0, elementIndex) + magazine.substring(elementIndex + 1);
+        }
     }
-};
 
-return isConditionalTrue;
+    return isConditionalTrue;
     
 };
 

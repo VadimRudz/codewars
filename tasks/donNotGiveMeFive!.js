@@ -7,7 +7,7 @@ function dontGiveMeFive(start, end)
             numberArray.push(start);
         }
     }
-  return numberArray.length;
+    return numberArray.length;
 }
 
 console.log(dontGiveMeFive(-11, 0));

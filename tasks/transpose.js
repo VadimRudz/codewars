@@ -8,7 +8,7 @@ function transpose(matrix) {
         array.push(temporaryArray);
         temporaryArray = [];
     }
-   return array
+    return array;
 }
 
 console.log(transpose([[1,2,3],[4,5,6]]));

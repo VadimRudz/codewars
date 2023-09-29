@@ -10,9 +10,9 @@ function dashatize(num) {
         const resultString = Array.prototype.reduce.call(stringNumber, (acc, char) => { 
             if(Number(char) % 2 !== 0) {
                 if(acc[acc.length -1]  === '-'){
-                    return acc + `${char}-`
+                    return acc + `${char}-`;
                 } else {
-                    return acc + `-${char}-`
+                    return acc + `-${char}-`;
                 }
             } else{
                 return acc + char;
@@ -26,7 +26,7 @@ function dashatize(num) {
         } else if (resultString[0] === '-') {
             return resultString.substring(1);
         } else if (resultString[stringLength - 1] === '-') {
-            return resultString.substring(0, resultString.length - 1)
+            return resultString.substring(0, resultString.length - 1);
         }
         
         return resultString;

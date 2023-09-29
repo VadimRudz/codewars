@@ -14,15 +14,15 @@ var groupAnagrams = function(strs) {
             }
         }
         resultArray.push(newArray);
-    }))
+    }));
 
     const uniqueArr = resultArray.filter((resultArray, index, self) => {
         return index === self.findIndex((a) => {
-          return JSON.stringify(a) === JSON.stringify(resultArray);
+            return JSON.stringify(a) === JSON.stringify(resultArray);
         });
-      });
+    });
 
-    return uniqueArr
+    return uniqueArr;
     
 };
 

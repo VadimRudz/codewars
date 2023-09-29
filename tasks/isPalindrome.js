@@ -12,8 +12,8 @@ const isPalindrome = function(head) {
             isPalindrome = false;
         }
     }
-    return isPalindrome
+    return isPalindrome;
 };
 
-console.log(isPalindrome([1,2]))
+console.log(isPalindrome([1,2]));
 

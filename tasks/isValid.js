@@ -3,7 +3,7 @@ var isValid = function (s) {
     const bracketsMap = new Map([['(', ')'], ['[', ']'], ['{', '}']]);
 
     if (s[0] === ')' || s[0] === ']' || s[0] === '}') {
-        return false
+        return false;
     } else {
         let copyS = s;
         while (copyS[0]) {

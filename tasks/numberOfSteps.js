@@ -4,13 +4,13 @@ const numberOfSteps = function(num) {
 
     while (num > 0) {
 
-        counter++
+        counter++;
 
-    if ( num % 2 === 0) {
-        num = num / 2;
-    } else {
-        num--
-    }
+        if ( num % 2 === 0) {
+            num = num / 2;
+        } else {
+            num--;
+        }
 
     }
 

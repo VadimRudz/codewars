@@ -1,11 +1,11 @@
 function narcissistic(value) {
 
-  const sumOfDigits = value => [...""+value].reduce((acc, dig) => acc + +Math.pow(dig,(value.toString(). length)), 0);
+    const sumOfDigits = value => [...""+value].reduce((acc, dig) => acc + +Math.pow(dig,(value.toString(). length)), 0);
 
-  let returnValue = sumOfDigits(value) === value ? true: false; 
+    let returnValue = sumOfDigits(value) === value ? true: false; 
 
-  return returnValue;
+    return returnValue;
   
-  }
+}
 
-  console.log(narcissistic(7));
+console.log(narcissistic(7));

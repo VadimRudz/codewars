@@ -6,10 +6,10 @@ function replaceDashesAsOne(str) {
 
     return str ;
     
-  }
+}
 
-  const str1 = "we-are- - - code----warriors.-"
-  const str2 = "twwfwn- - - - -gfruenhh- - -mfsa--------chhpkgwaxy-----"
+const str1 = "we-are- - - code----warriors.-";
+const str2 = "twwfwn- - - - -gfruenhh- - -mfsa--------chhpkgwaxy-----";
 
-  replaceDashesAsOne(str1);
+replaceDashesAsOne(str1);
 

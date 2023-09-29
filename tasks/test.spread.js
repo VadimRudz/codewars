@@ -19,7 +19,7 @@ const object = {
     "reason": "<string>",
     "note": "<string>",
     "reference": "<string>"
-  }
+};
 
 
 //   function test(amount_2, obj){
@@ -43,4 +43,4 @@ const copy3 = {...original, ['c']: 3 };
 console.log(copy3);
 
 const copy4 = { ...original, [c]: 4 };
-console.log(copy4)
+console.log(copy4);

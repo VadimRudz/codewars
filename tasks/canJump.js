@@ -1,11 +1,11 @@
 const canJump = function (nums) {
-  let lastPosition = nums.length - 1;
-  for (let i = nums.length - 2; i >= 0; i--) {
-    if (i + nums[i] >= lastPosition) {
-      lastPosition = i;
+    let lastPosition = nums.length - 1;
+    for (let i = nums.length - 2; i >= 0; i--) {
+        if (i + nums[i] >= lastPosition) {
+            lastPosition = i;
+        }
     }
-  }
-  return lastPosition === 0;
+    return lastPosition === 0;
 };
 console.log(canJump([0, 1]));
 

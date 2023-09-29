@@ -1,23 +1,23 @@
 var myPow = function (x, n) {
-  if (n === 0) {
-    return 1;
-  }
-
-  const positivePow = n < 0 ? -n : n;
-
-  let counter = 1;
-
-  let accumulate = x;
-
- if (n === 1) {
-    return x;
-  } else {
-    while (positivePow !== counter) {
-      accumulate *= x;
-      counter++;
+    if (n === 0) {
+        return 1;
     }
-  }
-  return n < 0 ? (1 / accumulate).toFixed(5) : accumulate.toFixed(5);
+
+    const positivePow = n < 0 ? -n : n;
+
+    let counter = 1;
+
+    let accumulate = x;
+
+    if (n === 1) {
+        return x;
+    } else {
+        while (positivePow !== counter) {
+            accumulate *= x;
+            counter++;
+        }
+    }
+    return n < 0 ? (1 / accumulate).toFixed(5) : accumulate.toFixed(5);
 };
 
 console.log(myPow(2.1, 3));

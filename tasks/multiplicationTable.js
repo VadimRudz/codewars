@@ -14,6 +14,6 @@ let multiplicationTable = function(size) {
         globalArray.push(insideArray);
     }
     return globalArray;
-  }
+};
 
-  console.log(multiplicationTable(3));
+console.log(multiplicationTable(3));
