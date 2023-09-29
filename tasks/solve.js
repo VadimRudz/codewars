@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 function solve(s) {
     const splitedStringArray = s.replace(/[a-z]/g, 'а')
         .replace(/ ([a])\1+/g, '$1')

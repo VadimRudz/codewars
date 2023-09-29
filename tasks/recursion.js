@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 function sumTo(n) { 
     if(n === 1) return n;
     else {
@@ -11,8 +12,6 @@ function factorial(n) {
         return n * factorial(n-1);
     }
 }
-
-let value = 1;
 
 function fib(n) {
     console.log(n);
