@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 var merge = function(nums1, m, nums2, n) {
     let i = m - 1;
     let j = n - 1;
