@@ -5,19 +5,20 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "pretest": "node ./tasks/pretest.js",
+    "styleCheck": "eslint ./tasks/**/*.js",
     "test": "node ./tasks/test.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "eslint": "^7.20.0",
+    "eslint": "^7.32.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-plugin-bdd": "^2.1.1",
     "eslint-plugin-import": "^2.25.4",
     "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-node": "^11.1.0",
+    "globals": "^15.2.0",
     "jest-expect-message": "^1.0.2"
   },
   "dependencies": {
