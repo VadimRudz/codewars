@@ -35,9 +35,4 @@ module.exports = {
         "describe": "readonly",
         "it": "readonly"
     },
-    "mocha": true,
-    "mochaReporter": {
-      "outputDir": "./mochawesome-report",
-      "quiet": false
-    }
 };
