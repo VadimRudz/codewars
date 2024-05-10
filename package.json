@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "pretest": "node ./tasks/pretest.js",
-    "test": "node test.js"
+    "test": "node ./tasks/test.js"
   },
   "keywords": [],
   "author": "",
