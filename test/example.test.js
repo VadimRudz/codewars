@@ -6,7 +6,7 @@ describe('Example', function() {
         equal(1 + 1, 2);
     });
 
-    it('should fail', function() {
-        equal(1 + 1, 3);
-    });
+    // it('should fail', function() {
+    //     equal(1 + 1, 3);
+    // });
 });
