@@ -1,7 +1,8 @@
 module.exports = {
     "env": {
         "browser": true,
-        "es2021": true
+        "es2021": true,
+        "mocha": true
     },
     "extends": "eslint:recommended",
     "overrides": [
@@ -29,5 +30,9 @@ module.exports = {
         "eol-last": ["error", "always"],
         "no-unused-vars": "off",
         "no-constant-condition": "off",
+    },
+    "globals": {
+        "describe": "readonly",
+        "it": "readonly"
     }
 };

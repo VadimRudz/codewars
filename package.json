@@ -6,7 +6,9 @@
   "type": "module",
   "scripts": {
     "styleCheck": "eslint ./tasks/**/*.js",
-    "cat": "node ./tasks/cat.js"
+    "cat": "node ./tasks/cat.js",
+    "test": "mocha test/**/*.js --reporter mochawesome",
+    "report": "marge mochawesome-report/mochawesome.json -o mochawesome-report"
   },
   "keywords": [],
   "author": "",
