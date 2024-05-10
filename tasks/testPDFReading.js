@@ -1,16 +1,7 @@
-// const PDFExtract = require('pdf.js-extract').PDFExtract;
-// const pdfExtract = new PDFExtract();
-// const options = {}; /* see below */
-// pdfExtract.extract('./files/transaction.pdf', options, (err, data) => {
-//   if (err) return console.log(err);
-//   console.log(data.pages[0].content);
-// });
-
-
-const fs = require('fs');
-const pdf = require('pdf-parse');
+import { readFileSync } from 'fs';
+import pdf from 'pdf-parse';
  
-let dataBuffer = fs.readFileSync('./files/transaction.pdf');
+let dataBuffer = readFileSync('./files/transaction.pdf');
  
 pdf(dataBuffer).then(function(data) {
  

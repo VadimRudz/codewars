@@ -26,6 +26,8 @@ module.exports = {
         "indent": ["error", 4],
         "no-tabs": "error",
         "no-mixed-spaces-and-tabs": "error",
-        "eol-last": ["error", "always"]
+        "eol-last": ["error", "always"],
+        "no-unused-vars": "off",
+        "no-constant-condition": "off",
     }
 };
