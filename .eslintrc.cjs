@@ -34,5 +34,10 @@ module.exports = {
     "globals": {
         "describe": "readonly",
         "it": "readonly"
+    },
+    "mocha": true,
+    "mochaReporter": {
+      "outputDir": "./mochawesome-report",
+      "quiet": false
     }
 };

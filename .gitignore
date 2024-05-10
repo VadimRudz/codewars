@@ -1,7 +1,6 @@
-node_modules/
+node_modules
+package-lock.json
 .DS_Store
 .idea
 .vscode
-/report
-/debug
-/.env.secure
+mochawesome-report
