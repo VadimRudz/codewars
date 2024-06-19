@@ -39,6 +39,8 @@ jobs:
 
       - run: npm run styleCheck
 
+      - run: npm run db-connection
+
       - run: npm run cat
 
       - name: Run test
