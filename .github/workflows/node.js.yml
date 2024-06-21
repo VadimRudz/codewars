@@ -37,10 +37,10 @@ jobs:
 
       - name: Set environment variables from secrets
         run: |
-              echo "SECRET_KEY=${{ secrets.DB_NAME }}" >> .env
-              echo "ANOTHER_SECRET=${{ secrets.DB_PASSWORD }}" >> .env
-              echo "SECRET_KEY=${{ secrets.DB_SERVER }}" >> .env
-              echo "ANOTHER_SECRET=${{ secrets.DB_USER }}" >> .env
+          echo "DB_USER=${{ secrets.DB_USER }}" >> .env
+          echo "DB_PASSWORD=${{ secrets.DB_PASSWORD }}" >> .env
+          echo "DB_SERVER=${{ secrets.DB_SERVER }}" >> .env
+          echo "DB_NAME=${{ secrets.DB_NAME }}" >> .env
               
       - run: npm ci
 
