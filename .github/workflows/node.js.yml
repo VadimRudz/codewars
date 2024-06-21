@@ -35,6 +35,13 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-node-
 
+      - name: Set environment variables from secrets
+        run: |
+              echo "SECRET_KEY=${{ secrets.DB_NAME }}" >> .env
+              echo "ANOTHER_SECRET=${{ secrets.DB_PASSWORD }}" >> .env
+              echo "SECRET_KEY=${{ secrets.DB_SERVER }}" >> .env
+              echo "ANOTHER_SECRET=${{ secrets.DB_USER }}" >> .env
+              
       - run: npm ci
 
       - run: npm run styleCheck
