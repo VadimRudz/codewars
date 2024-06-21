@@ -14,15 +14,10 @@ const config = {
     }
 };
 
-const dbUser = process.env.DB_USER;
-const dbPassword = process.env.DB_PASSWORD;
-const dbServer = process.env.DB_SERVER;
-const dbName = process.env.DB_NAME;
-
-console.log(dbUser);
-console.log(dbPassword);
-console.log(dbServer);
-console.log(dbName);
+console.log('DB_USER:', process.env.DB_USER);
+console.log('DB_PASSWORD:', process.env.DB_PASSWORD);
+console.log('DB_SERVER:', process.env.DB_SERVER);
+console.log('DB_NAME:', process.env.DB_NAME);
 
 const connectToDatabase = async () => {
     try {
