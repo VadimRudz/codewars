@@ -8,6 +8,7 @@
     "styleCheck": "eslint ./tasks/**/*.js",
     "cat": "node ./tasks/cat.js",
     "test": "mocha test/**/*.js --reporter mochawesome",
+    "db-connection": "node db-connection.js",
     "report": "marge mochawesome-report/mochawesome.json -o mochawesome-report"
   },
   "keywords": [],
@@ -28,6 +29,7 @@
   },
   "dependencies": {
     "dotenv": "^11.0.0",
-    "jest": "~26.6.3"
+    "jest": "~26.6.3",
+    "mssql": "^11.0.0"
   }
 }
