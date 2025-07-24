@@ -2,11 +2,9 @@ pipeline {
     agent any
 
     stages {
-        stage('Hello') {
+        stage('Cat test') {
             steps {
-                echo 'Hello World'
-                sh 'echo "Hey Bro"'
-                sh 'date'
+                npm run cat
             }
         }
     }
