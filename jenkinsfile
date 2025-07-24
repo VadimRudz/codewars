@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Cat test') {
             steps {
-                npm run cat
+                sh 'npm run cat'
             }
         }
     }
