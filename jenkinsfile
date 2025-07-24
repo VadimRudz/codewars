@@ -1,12 +1,27 @@
 pipeline {
     agent any
-
+    
+    tools {
+        nodejs "NodeJS" 
+    }
+    
     stages {
-        stage('Cat test') {
+        stage('Checkout') {
+            steps {
+                git branch: 'master', 
+                url: 'https://github.com/VadimRudz/codewars.git'
+            }
+        }
+        
+        stage('Verify Node') {
             steps {
                 sh 'node --version'
                 sh 'npm --version'
-                sh 'npm install'
+            }
+        }
+        
+        stage('Run Command') {
+            steps {
                 sh 'npm run cat'
             }
         }
