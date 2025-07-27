@@ -24,6 +24,10 @@ pipeline {
             steps {
                 sh 'npm run cat'
             }
+
+            post {
+                junit 'test-results/test-results.xml'
+            }
         }
     }
 }
